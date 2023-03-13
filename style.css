@@ -1,0 +1,237 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0rem 0.5rem 2rem 0px rgb(0 0 0 / 10%);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0%;
+    padding: 2rem 0rem;
+    background-color: white;
+    z-index: 30;
+    margin: auto;
+}
+header > div{
+    color: black;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 8.5rem;
+}
+nav > div{
+    color: black;
+    margin: 0.67rem;
+}
+a.one{
+    text-decoration: none;
+    color: black;
+    font-size: 1.33rem;
+    font-family: sans-serif;
+}
+a.one:hover{
+    color: hsl(0, 94%, 66%);
+}
+a.two{
+    background-color: hsl(0, 94%, 66%);
+    font-size: 1.33rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border-radius: 0.33rem;
+    padding: 0.33rem 0.67rem;
+    font-weight: 700;
+    color: #fff;
+}
+a.two:hover{
+    border-style: solid;
+    border-color:hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+    background-color: white;
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.home > div{
+    font-size: 1.33rem;
+    font-family: sans-serif;
+    color: hsl(229, 8%, 60%);
+}
+.body-position{
+    padding: 15rem 8rem;
+    margin: auto; 
+}
+.homeButton{
+    margin: 2rem 0rem;
+    padding: 0.67rem 1.33rem;
+    border-color: hsl(231, 69%, 60%);
+    border-radius: 0.33rem;
+    box-shadow: 0.27rem 0.27rem hsl(231deg 69% 60%);
+}
+.homeButton:hover{
+    color: #fff;
+    background-color:hsl(231, 69%, 60%) ;
+    box-shadow: none;
+    cursor: pointer;
+}
+.homeImg{
+    height:23.33rem;
+    width:30.33rem;
+}
+.platforms{
+    text-align: center;
+    display: block;
+    color: hsl(229, 31%, 21%);
+    font-size: 2rem;
+    margin: auto;
+}
+.platformBox{
+    display: flex;
+    justify-content: space-between;
+    padding: 3.33rem;
+    margin-inline: 2.67rem;
+}
+.platformItem{
+    flex: 0.33;
+    color: hsl(229, 8%, 60%);
+    text-align: center;
+    border: solid hsl(231, 69%, 60%);
+    border-radius: 0.4rem;
+    margin: 1.33rem;
+    padding: 0.67rem;
+    box-shadow: 0.27rem 0.27rem hsl(231deg 69% 60%); 
+    font-size: 1rem;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+.platformItem:hover{
+    box-shadow: none;
+}
+.platformBoxHeading{
+    font-size: 1.33rem; 
+    font-weight: 600; 
+    padding: 0.67rem; 
+    color: black;
+    font-family: sans-serif;
+}
+.platformButton{
+    color: #fff;
+    background-color:  hsl(231deg 69% 60%);
+    margin: 2rem 0rem;
+    padding: 0.67rem 1.33rem;
+    border-color: hsl(231, 69%, 60%);
+    border-radius: 0.33rem;
+    font-size: 1rem;
+}
+.platformButton:hover{
+    border: solid  hsl(231deg 69% 60%);
+    color:  hsl(231deg 69% 60%);
+    background-color: #fff;
+    cursor: pointer;
+}
+.footer{
+    display: grid;
+    height: 33.33rem;
+    width: 60rem;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.33rem;
+    margin-inline: 8rem;
+}
+.footerItem{
+    text-align: left;
+    padding: 2rem;
+}
+.footerElement{
+    padding: 0.67rem;
+}
+a.three{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+
+}
+a.three:hover{
+    margin: 0.33rem;
+}
+.footerHeading{
+    font-size: 2rem; 
+    font-weight: 600; 
+    padding: 0.67rem; 
+    color: black;
+    font-family: sans-serif;
+}
+.logo:hover{
+    cursor: pointer;
+}
+@media(max-width: 991px){
+    .home{
+        flex-direction: column;
+        width: 500px;
+    }
+    html{
+        font-size: 55%;
+    }
+    .homeImg{
+        height:33.33rem;
+        width:63.33rem;
+    }
+}
+@media(max-width: 450px){
+    .platforms{
+        font-size: 3rem;
+        margin-right: -24rem;
+        padding-bottom: 2rem;
+    }
+    .platformBox{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        margin-right: -20rem; 
+        padding: -0.67rem;  
+    }
+    .platformItem{
+        font-size: 1.5rem;
+    }
+    .platformBoxHeading{
+        font-size: 3rem;
+    }
+    .footer{
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+    }
+   .homeImg{
+    height: 100%;
+    width: 100%;
+   }
+  .footerElement{
+    font-size: 3rem;
+  }
+  .footerHeading{
+    font-size: 5.5rem;
+  }
+  .home{
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 61rem;
+  }
+  html {
+    margin: 0px;
+    height: 100%;
+    width: 100vw;
+ }
+ 
+ body {
+    margin: 0px;
+    width: 100vw;
+    position: absolute;
+ }
+}
